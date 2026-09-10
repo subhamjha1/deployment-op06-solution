@@ -1,0 +1,2919 @@
+{
+  "intents": {
+    "promo_code_invalid": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "ask-the-oracle",
+        "early": "pull-up-account",
+        "late": "promo-code"
+      }
+    },
+    "mistimed_billing_already_returned": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "update-order",
+        "mid": "validate-purchase",
+        "early": "pull-up-account"
+      }
+    },
+    "status_quantity": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "late": "offer-refund",
+        "early": "pull-up-account"
+      }
+    },
+    "out_of_stock_general": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "notify-team",
+        "early": "pull-up-account",
+        "late": "promo-code"
+      }
+    },
+    "manage_payment_method": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "record-reason",
+        "late": "verify-identity",
+        "early": "pull-up-account"
+      }
+    },
+    "missing": {
+      "flow": "shipping_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "validate-purchase",
+        "late": "make-purchase",
+        "early": "pull-up-account"
+      }
+    },
+    "status_payment_method": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "update-order",
+        "mid": "verify-identity",
+        "early": "pull-up-account"
+      }
+    },
+    "mistimed_billing_never_bought": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "validate-purchase",
+        "late": "update-order",
+        "early": "pull-up-account"
+      }
+    },
+    "status_service_removed": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "update-account",
+        "early": "pull-up-account",
+        "mid": "record-reason"
+      }
+    },
+    "return_color": {
+      "flow": "product_defect",
+      "permitted_actions": [
+        "end-conversation",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "update-order",
+        "validate-purchase"
+      ],
+      "action_by_bucket": {
+        "late": "enter-details",
+        "early": "pull-up-account",
+        "mid": "validate-purchase"
+      }
+    },
+    "status_service_added": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "ask-the-oracle",
+        "late": "ask-the-oracle",
+        "early": "pull-up-account"
+      }
+    },
+    "status_due_amount": {
+      "flow": "subscription_inquiry",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "enter-detail",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "subscription-status",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "mid": "subscription-status",
+        "late": "send-link"
+      }
+    },
+    "jeans_other_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "late": "select-faq",
+        "early": "search-faq"
+      }
+    },
+    "bad_price_yesterday": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "mid": "record-reason",
+        "late": "promo-code"
+      }
+    },
+    "manage_create": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "make-purchase",
+        "mid": "verify-identity",
+        "early": "pull-up-account"
+      }
+    },
+    "status_credit_missing": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "ask-the-oracle",
+        "early": "pull-up-account",
+        "late": "promo-code"
+      }
+    },
+    "status_due_date": {
+      "flow": "subscription_inquiry",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "enter-detail",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "subscription-status",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "late": "send-link",
+        "early": "pull-up-account"
+      }
+    },
+    "refund_initiate": {
+      "flow": "product_defect",
+      "permitted_actions": [
+        "end-conversation",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "update-order",
+        "validate-purchase"
+      ],
+      "action_by_bucket": {
+        "mid": "pull-up-account",
+        "late": "offer-refund",
+        "early": "pull-up-account"
+      }
+    },
+    "reset_2fa": {
+      "flow": "account_access",
+      "permitted_actions": [
+        "enter-details",
+        "make-password",
+        "n-a",
+        "pull-up-account",
+        "send-link",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "enter-details",
+        "late": "send-link",
+        "early": "pull-up-account"
+      }
+    },
+    "promo_code_out_of_date": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "late": "promo-code",
+        "mid": "pull-up-account"
+      }
+    },
+    "return_size": {
+      "flow": "product_defect",
+      "permitted_actions": [
+        "end-conversation",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "update-order",
+        "validate-purchase"
+      ],
+      "action_by_bucket": {
+        "mid": "validate-purchase",
+        "late": "enter-details",
+        "early": "pull-up-account"
+      }
+    },
+    "policy_3": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "manage": {
+      "flow": "shipping_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "update-order",
+        "mid": "shipping-status",
+        "early": "pull-up-account"
+      }
+    },
+    "pricing_4": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "send-link"
+      }
+    },
+    "manage_change_name": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "pull-up-account",
+        "early": "pull-up-account",
+        "late": "verify-identity"
+      }
+    },
+    "refund_status": {
+      "flow": "product_defect",
+      "permitted_actions": [
+        "end-conversation",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "update-order",
+        "validate-purchase"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "mid": "validate-purchase",
+        "late": "validate-purchase"
+      }
+    },
+    "refund_update": {
+      "flow": "product_defect",
+      "permitted_actions": [
+        "end-conversation",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "update-order",
+        "validate-purchase"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "late": "offer-refund",
+        "mid": "validate-purchase"
+      }
+    },
+    "boots_how_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "late": "search-faq",
+        "early": "search-faq",
+        "mid": "select-faq"
+      }
+    },
+    "boots_how_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "search-faq"
+      }
+    },
+    "return_stain": {
+      "flow": "product_defect",
+      "permitted_actions": [
+        "end-conversation",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "update-order",
+        "validate-purchase"
+      ],
+      "action_by_bucket": {
+        "mid": "validate-purchase",
+        "early": "pull-up-account",
+        "late": "enter-details"
+      }
+    },
+    "pricing_3": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "search-pricing"
+      }
+    },
+    "manage_change_phone": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "mid": "record-reason",
+        "late": "update-account"
+      }
+    },
+    "manage_extension": {
+      "flow": "subscription_inquiry",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "enter-detail",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "subscription-status",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "early": "pull-up-account",
+        "late": "update-account"
+      }
+    },
+    "manage_cancel": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "early": "pull-up-account",
+        "late": "offer-refund"
+      }
+    },
+    "manage_pay_bill": {
+      "flow": "subscription_inquiry",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "enter-detail",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "subscription-status",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "late": "update-account",
+        "mid": "verify-identity"
+      }
+    },
+    "policy_4": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "late": "select-faq",
+        "early": "search-faq",
+        "mid": "search-policy"
+      }
+    },
+    "cost": {
+      "flow": "shipping_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "offer-refund",
+        "mid": "validate-purchase",
+        "early": "pull-up-account"
+      }
+    },
+    "status": {
+      "flow": "shipping_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "ask-the-oracle",
+        "mid": "verify-identity",
+        "early": "pull-up-account"
+      }
+    },
+    "boots_other_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-boots",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "membership_4": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "search-membership",
+        "late": "search-membership"
+      }
+    },
+    "credit_card": {
+      "flow": "troubleshoot_site",
+      "permitted_actions": [
+        "enter-details",
+        "instructions",
+        "log-out-in",
+        "make-purchase",
+        "notify-internal-team",
+        "notify-team",
+        "try-again"
+      ],
+      "action_by_bucket": {
+        "mid": "log-out-in",
+        "early": "try-again",
+        "late": "enter-details"
+      }
+    },
+    "search_results": {
+      "flow": "troubleshoot_site",
+      "permitted_actions": [
+        "enter-details",
+        "instructions",
+        "log-out-in",
+        "make-purchase",
+        "notify-internal-team",
+        "notify-team",
+        "try-again"
+      ],
+      "action_by_bucket": {
+        "mid": "instructions",
+        "late": "instructions",
+        "early": "log-out-in"
+      }
+    },
+    "status_mystery_fee": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "late": "update-order",
+        "early": "pull-up-account"
+      }
+    },
+    "boots_how_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-boots",
+        "late": "select-faq"
+      }
+    },
+    "jacket_how_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "search-jacket"
+      }
+    },
+    "slow_speed": {
+      "flow": "troubleshoot_site",
+      "permitted_actions": [
+        "enter-details",
+        "instructions",
+        "log-out-in",
+        "make-purchase",
+        "notify-internal-team",
+        "notify-team",
+        "try-again"
+      ],
+      "action_by_bucket": {
+        "mid": "try-again",
+        "early": "log-out-in",
+        "late": "instructions"
+      }
+    },
+    "shirt_other_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-shirt",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "shirt_other_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "search-shirt",
+        "late": "select-faq"
+      }
+    },
+    "recover_username": {
+      "flow": "account_access",
+      "permitted_actions": [
+        "enter-details",
+        "make-password",
+        "n-a",
+        "pull-up-account",
+        "send-link",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "mid": "verify-identity",
+        "late": "verify-identity"
+      }
+    },
+    "manage_dispute_bill": {
+      "flow": "subscription_inquiry",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "enter-detail",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "subscription-status",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "late": "offer-refund",
+        "early": "pull-up-account"
+      }
+    },
+    "jeans_how_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "status_delivery_time": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "early": "pull-up-account",
+        "late": "update-order"
+      }
+    },
+    "bad_price_competitor": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "record-reason",
+        "late": "promo-code",
+        "early": "pull-up-account"
+      }
+    },
+    "boots_other_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-boots",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "timing_1": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "jeans_other_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "shirt_other_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "late": "search-shirt",
+        "mid": "select-faq"
+      }
+    },
+    "manage_upgrade": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "verify-identity",
+        "late": "update-order",
+        "early": "pull-up-account"
+      }
+    },
+    "policy_1": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "search-policy",
+        "late": "select-faq"
+      }
+    },
+    "manage_downgrade": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "membership",
+        "mid": "verify-identity",
+        "early": "pull-up-account"
+      }
+    },
+    "shopping_cart": {
+      "flow": "troubleshoot_site",
+      "permitted_actions": [
+        "enter-details",
+        "instructions",
+        "log-out-in",
+        "make-purchase",
+        "notify-internal-team",
+        "notify-team",
+        "try-again"
+      ],
+      "action_by_bucket": {
+        "mid": "log-out-in",
+        "early": "try-again",
+        "late": "log-out-in"
+      }
+    },
+    "recover_password": {
+      "flow": "account_access",
+      "permitted_actions": [
+        "enter-details",
+        "make-password",
+        "n-a",
+        "pull-up-account",
+        "send-link",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "late": "make-password",
+        "mid": "enter-details",
+        "early": "pull-up-account"
+      }
+    },
+    "status_shipping_question": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "ask-the-oracle",
+        "early": "pull-up-account",
+        "late": "send-link"
+      }
+    },
+    "policy_2": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "search-policy",
+        "late": "select-faq"
+      }
+    },
+    "out_of_stock_one_item": {
+      "flow": "purchase_dispute",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "n-a",
+        "notify-internal-team",
+        "notify-team",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "update-order",
+        "validate-purchase",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "record-reason",
+        "late": "make-purchase",
+        "early": "pull-up-account"
+      }
+    },
+    "pricing_2": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "late": "search-pricing",
+        "mid": "select-faq"
+      }
+    },
+    "manage_change_address": {
+      "flow": "manage_account",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "n-a",
+        "offer-refund",
+        "promo-code",
+        "pull-up-account",
+        "record-reason",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "record-reason",
+        "late": "update-account",
+        "early": "pull-up-account"
+      }
+    },
+    "membership_3": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "late": "select-faq",
+        "mid": "select-faq"
+      }
+    },
+    "membership_2": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "mid": "search-membership",
+        "late": "select-faq",
+        "early": "search-membership"
+      }
+    },
+    "membership_1": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "timing_4": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "search-timing",
+        "late": "promo-code"
+      }
+    },
+    "timing_2": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "shirt_how_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq"
+      }
+    },
+    "timing_3": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "search-pricing"
+      }
+    },
+    "jacket_how_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-jacket",
+        "late": "ask-the-oracle"
+      }
+    },
+    "jacket_other_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "late": "select-faq",
+        "mid": "search-jacket",
+        "early": "search-faq"
+      }
+    },
+    "boots_how_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "late": "select-faq",
+        "mid": "search-boots"
+      }
+    },
+    "boots_other_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "notify-team"
+      }
+    },
+    "jeans_other_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-jeans",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "jacket_how_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "status_questions": {
+      "flow": "subscription_inquiry",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "enter-detail",
+        "enter-details",
+        "membership-privileges",
+        "n-a",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "send-link",
+        "subscription-status",
+        "update-account",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "mid": "subscription-status",
+        "late": "subscription-status",
+        "early": "pull-up-account"
+      }
+    },
+    "boots_other_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "notify-team"
+      }
+    },
+    "shirt_other_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "pricing_1": {
+      "flow": "storewide_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "membership",
+        "n-a",
+        "policy",
+        "pricing",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "timing"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "notify-team"
+      }
+    },
+    "jeans_how_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "jacket_other_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "jeans_how_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "select-faq",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "jacket_other_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-jacket",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "jeans_how_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "search-jeans",
+        "late": "search-jeans"
+      }
+    },
+    "shirt_how_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "late": "select-faq",
+        "mid": "select-faq",
+        "early": "search-faq"
+      }
+    },
+    "jacket_how_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-faq",
+        "mid": "select-faq",
+        "late": "select-faq"
+      }
+    },
+    "jacket_other_3": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "early": "search-jacket",
+        "mid": "search-jacket",
+        "late": "search-jacket"
+      }
+    },
+    "shirt_how_1": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-shirt",
+        "late": "select-faq",
+        "early": "search-faq"
+      }
+    },
+    "shirt_how_2": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-shirt",
+        "late": "select-faq",
+        "early": "search-faq"
+      }
+    },
+    "jeans_other_4": {
+      "flow": "single_item_query",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "boots",
+        "jacket",
+        "jeans",
+        "n-a",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-answer",
+        "select-faq",
+        "shirt"
+      ],
+      "action_by_bucket": {
+        "mid": "search-jeans",
+        "early": "search-faq",
+        "late": "select-faq"
+      }
+    },
+    "status_delivery_date": {
+      "flow": "order_issue",
+      "permitted_actions": [
+        "ask-the-oracle",
+        "make-purchase",
+        "membership-privileges",
+        "offer-refund",
+        "pull-up-account",
+        "search-boots",
+        "search-faq",
+        "search-jacket",
+        "search-jeans",
+        "search-membership",
+        "search-policy",
+        "search-pricing",
+        "search-shirt",
+        "search-timing",
+        "select-faq",
+        "shipping-status",
+        "update-order",
+        "verify-identity"
+      ],
+      "action_by_bucket": {
+        "early": "pull-up-account",
+        "mid": "ask-the-oracle",
+        "late": "verify-identity"
+      }
+    }
+  },
+  "guideline_text_by_flow": {
+    "Product Defect": [
+      "[Initiate Refund]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID using [Pull up Account].  This will pull up their account in the background with the right information related to this user.",
+      "  - To confirm that their purchase is valid with [Validate Purchase]: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID - last item, to be consistent with verify identity)",
+      "  - Refund method in [Record Reason] - valid options are (Gift card - they want a prepaid gift card, also ask for their address so you know where to mail it.  Enter this value in the next step.; Add value - to add value to their account.; Paper check - also ask for their address so you know where to mail the check.  Enter this address in the next step.)",
+      "  - Add in additional information using [Enter Details] (If the customer chose gift card or paper check then enter the full address; If the customer chose add value or credit card then enter the account ID)",
+      "  - Dollar amount - enter this value into the details form (without the dollar sign) (Then click [Offer Refund]; If the customer does not know, the default amount is $50)",
+      "[Update Refund]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Confirm that their purchase is valid with [Validate Purchase]: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID - you may have gotten this already to perform the status check)",
+      "  - Find out the new item they want to return: (Get the brand and type, such as 'Old Navy Socks' or 'Nike Shoes'; Enter this into the input box and [Record Reason])",
+      "  - Get the dollar amount to refund (Ask for the price of the product from the customer; The total refund is the amount of their previous refund plus their current one. > ie. if their old amount is $100 and their new item is $30, then the total is '130'; Enter the amount (without dollar sign) and then click [Offer Refund])",
+      "[Refund Status]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Gather details to find the appropriate order: (Username - first; Email Address - second; Order ID - third)",
+      "  - Respond with the information to the customer in natural language (Pick a refund status from the list of three options > not started, in progress, complete; Tell the customer this is their refund status; Pick a payment method from the following three options > online, by phone, by chat)",
+      "  - If the customer is not satisfied with your answer, and would like to change their refund (If they do not like the status: > Enter 'manager' into [Notify Internal Team] > Explain that you have escalated the issue to the manager; If they do not like the payment method: > Enter \u201cchange method\u201d into [Update Order])",
+      "[Return Due to Stain]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Confirm that their purchase is valid with [Validate Purchase] (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Confirm their order can be returned, by checking their membership level. (Gold members: > Gold members get unlimited returns; Silver members: > Ask for the purchase date, return possible within the last 6 months <or> Ask if they have a receipt, get to return if user has receipt <or> Ask if in original packaging, get to return if in original packaging; Bronze members: > Ask for the purchase date, return possible within the last 90 days <or> Ask if they have a receipt, get to return if user has receipt <or> Ask if in original packaging, get to return if in original packaging)",
+      "  - Communication (If the customer can return, tell them the good news and go to the next step; If the customer cannot return, apologize and explain the problem. Then [End Conversation])",
+      "  - Since the customer will print out a shipping label for the return, you need their full address.  You can give this explanation if the customer asks why you need the address. (Street Number and Street Name; City, State, Zip Code; Fill this as one line into [Enter Details])",
+      "  - Ask the customer how they would like to process their return: (Options include: 'By Mail', 'In Store', or 'Drop off Center'; Fill in the form with one of these three values and submit to [Update Order])",
+      "[Return Due to Color]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Confirm that their purchase is valid with [Validate Purchase] (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Confirm their order can be returned, by checking their membership level. (Gold members: > Gold members get unlimited returns; Silver members: > Ask for the purchase date, return possible within the last 6 months <or> Ask if they have a receipt, get to return if user has receipt <or> Ask if in original packaging, get to return if in original packaging; Bronze members: > Ask for the purchase date, return possible within the last 90 days <or> Ask if they have a receipt, get to return if user has receipt <or> Ask if in original packaging, get to return if in original packaging)",
+      "  - Communication (If the customer can return, tell them the good news and go to the next step; If the customer cannot return, apologize and explain the problem. Then [End Conversation])",
+      "  - Since the customer will print out a shipping label for the return, you need their full address.  You can give this explanation if the customer asks why you need the address. (Street Number and Street Name; City, State, Zip Code; Fill this as one line into [Enter Details])",
+      "  - Ask the customer how they would like to process their return: (Options include: 'By Mail', 'In Store', or 'Drop off Center'; Fill in the form with one of these three values and submit to [Update Order])",
+      "[Return Due to Size]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Confirm that their purchase is valid with [Validate Purchase] (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Confirm their order can be returned, by checking their membership level. (Gold members: > Gold members get unlimited returns; Silver members: > Ask for the purchase date, return possible within the last 6 months <or> Ask if they have a receipt, get to return if user has receipt <or> Ask if in original packaging, get to return if in original packaging; Bronze members: > Ask for the purchase date, return possible within the last 90 days <or> Ask if they have a receipt, get to return if user has receipt <or> Ask if in original packaging, get to return if in original packaging)",
+      "  - Communication (If the customer can return, tell them the good news and go to the next step; If the customer cannot return, apologize and explain the problem. Then [End Conversation])",
+      "  - Since the customer will print out a shipping label for the return, you need their full address.  You can give this explanation if the customer asks why you need the address. (Street Number and Street Name; City, State, Zip Code; Fill this as one line into [Enter Details])",
+      "  - Ask the customer how they would like to process their return: (Options include: 'By Mail', 'In Store', or 'Drop off Center'; Fill in the form with one of these three values and submit to [Update Order])"
+    ],
+    "Order Issue": [
+      "[Status Mystery Fee]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - To decide whether or not this is a valid error: (Check if the company made error by 'Asking the Oracle' which will return Yes or No; If this was a company mistake (Oracle says Yes), skip the next step; Make sure to explain the result in natural language.)",
+      "  - If Oracle Says No, this means the customer possibly made an error (Ask the customer for their membership level and enter into [Membership Privileges]; If Gold or Silver: > We trust our gold and silver members.  Thus, they will always get their extra fees removed.  Go to next step.; If Guest or Bronze: > Then this is a customer error, and the extra fee stays. You cannot do anything > Apologize for the issue and [End Conversation])",
+      "  - Offer to remove fee (only for Gold or Silver member) (Confirm the amount that the customer felt was overcharged; Enter this value (without dollar sign) and select [Update Order])",
+      "[Status Delivery Time]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - To decide whether or not this is a valid error: (Check if the company made error by 'Asking the Oracle' which will return Yes or No; If this was a company mistake (Oracle says Yes), skip the next step; Make sure to explain the result in natural language.)",
+      "  - If Oracle Says No, this means the customer possibly made an error",
+      "  - x",
+      "[Status Payment Method]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out whether the item has already shipped. (Ask for the shipping status from the customer and enter into [Shipping Status]; If the item is 'Order Received' or 'In Transit', then you can change the payment method immediately (go to the next step).; If the item is 'Out for Delivery' or 'Delivered' then the new payment method only applies to future orders (explain to the customer and see if they still want to change payment method).)",
+      "  - Change the payment method (Enter in the new, desired payment method which can be credit card, debit card or paypal; Select the [Update Order] option with the new payment method)",
+      "[Status Quantity]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - To decide whether or not this is a valid error: (Check if the email is accurate by 'Asking the Oracle' which will return Yes or No; If the email was wrong (Oracle returns No), then assure the customer that they were only charged for one item and that the email was wrong. Skip the following steps and [End Conversation] after explaining.; If the email was right (Oracle returns Yes), then it is a company mistake.  Continue to the next step below.)",
+      "  - (Only if Oracle says Yes) Find out whether the item has already shipped. (Ask for the shipping status from the customer and then submit using [Shipping Status]; If the item is Order Received, then immediately offer the refund and tell the customer the unwanted item has been removed from their order.; If the item is 'In Transit', 'Out for Delivery' or 'Delivered' then they must wait until the item arrives and call back to customer support to start the return process.)",
+      "  - (Only if Oracle says Yes) Find out how much the item cost (Ask the customer how much is the cost of the item meant to be returned; Enter that into the form and select the [Offer Refund] option)",
+      "[Manage Upgrade]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out whether the item has already shipped. (Ask for the shipping status from customer, and enter into [Shipping Status] > Possible options: ['Order Received', 'In Transit', 'Out for Delivery', 'Delivered']; If the item is 'Order Received' > Then the company has received the order, but the item has not yet shipped > Move onto the next step; If the item is 'In Transit', 'Out for Delivery', or 'Delivered' then it is too late > The item has already shipped and the date cannot be altered > However, this means the item will likely arrive today or tomorrow anyway > Explain this to the customer and [End Conversation])",
+      "  - Find out how much the extra fee will be for upgraded overnight shipping (Ask the customer for their membership level.  Type it into the field and then select the [Membership Privileges] option.; Gold members: > Gold members have their fee waived; Guest, Bronze or Silver members: > Ask them if they can charge $20 to the credit card on their account > The answer should be yes, since that is the only way to pay)",
+      "  - Finally, you want to upgrade their shipping time. (Enter 'tomorrow' and then select [Update Order])",
+      "[Manage Downgrade]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out whether the item has already shipped. (Ask for the shipping status from customer, and enter into [Shipping Status] > Possible options: ['Order Received', 'In Transit', 'Out for Delivery', 'Delivered']; If the item is 'Order Received' > Then the company has received the order, but the item has not yet shipped > Move onto the next step; If the item is 'In Transit', 'Out for Delivery', or 'Delivered' then it is too late > The item has already shipped and the date cannot be altered > Then move onto the next step)",
+      "  - Determine how to manage the shipping cost (Find the membership level and enter into [Membership Privileges]; If Gold, Silver or Bronze: > If not yet shipped, tell the customer you can delay the shipping date with no problem.  Then head to the next step. > If already shipped, tell the customer you can add a credit back to their account for the amount of the shipping fee.  Then  [End Conversation]; If Guest member: > If not yet shipped, tell the customer you can delay the shipping date with no problem.  Then head to the next step. > If already shipped, tell the customer there is nothing you can do.  Apologize for any inconvenience and [End Conversation])",
+      "  - If the item has not yet been shipped, then you can change it (Enter 'next week' into the field and [Update Order]; Finally ask if they need anything else and [End Conversation])",
+      "[Manage Create]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out whether the item has already shipped. (Ask the customer for the shipping status, and enter into [Shipping Status]; If the item is Order Received, then skip the next step and directly update the order.; If the item is 'In Transit', 'Out for Delivery', or 'Delivered' then it is too late.  Move to the next step (membership level).)",
+      "  - Silver and Gold members get special treatment.  Ask the customer for their membership level, if they qualify: (Enter the Gold or Silver level.  Their existing order is already out for delivery, so instead you will ship the new item to them ASAP in a separate order with no shipping fee.; Choose the [Membership Privileges] option)",
+      "  - To add to an item to the order you will need to enter its name (Enter a phrase of brand and item, such as 'Guess Jeans' or 'Calvin Klein Shirt'; Then select [Make Purchase])",
+      "[Manage Cancel]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out whether the item has already shipped. (Ask customer for the shipping status and then submit using [Shipping Status]; If the item is Order Received, then immediately offer the refund and tell the customer the unwanted item has been removed from their order.; If the item is 'In Transit', 'Out for Delivery' or 'Delivered' then check their membership level (next step).)",
+      "  - Ask the customer for their membership level. (If they are bronze, silver or gold: > Enter Gold or Silver, depending on the level into the text box > Click the [Membership Privileges] option > Tell them you can offer a refund immediately.  After the item arrives, the customer should then call back to customer support to get the shipping label for return.; If they are a Guest customer, then they must wait until the item arrives and call back to customer support to start the return process. [End Conversation] after communicating the above.)",
+      "  - Find out how much the item cost that is meant to be returned (Enter the amount in the box; Select the [Offer Refund] option)"
+    ],
+    "Account Access": [
+      "[Recover Username]",
+      "  - Ask the customer for their Full name or Account ID with [Pull up Account].   This loads information in the background related to this user.",
+      "  - Ask the customer for 3 out of 4 items below and use the [Verify Identity] button (Full name - first and last; Zip Code; Phone number)",
+      "  - You make up their username with the first letter of their first name, their last name with a 1 (For example: John Smith \u2192 jsmith1; For example: Wendy Chesterfield \u2192 wchesterfield1; If you are here as part of [Validate Purchase] action or some external flow assume this new username is correct even if the system says it is not valid, and just continue forward with the conversation)",
+      "[Recover Password]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Get the customer\u2019s username to check their identity (If they don\u2019t have their username, then follow the 'Recover Username' flow above; Once you have it, enter the username and click on [Enter Details])",
+      "  - Tell the customer you cannot get their password, but you can generate a new one for them.",
+      "  - To operate the [Make Password] action, you will first need: (Pin Number <or> answer to the Security Question; Enter either value into the box and then click the [Make Password] button)",
+      "[Reset Two-Factor Auth]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - You will need their email address so you can email them the reset code: (Enter their email address with the [Enter Details] action; If they don\u2019t have their email address, you can bypass this problem by getting one of the following two items: > Ask for their PIN number > Tell them you are going to ask the security question, which is 'What is your mother\u2019s maiden name?'; Then submit that value into the [Enter Details] form instead.  Tell them that you will send the reset code to the email address saved on file.  Feel free to make up an email address if the customer asks for it.)",
+      "  - Inform the customer that to be safe, they should also follow best practices for security. (Tell them you will send a link about security best practices; Then click the [Send Link] button, you do not need to enter anything into the form)"
+    ],
+    "Troubleshoot Site": [
+      "[Invalid Credit Card]",
+      "  - Option 1 (Instruct the customer to try entering their credit card information again; Choose the [Try Again] option as your action. Nothing to enter in the form.)",
+      "  - Option 2 (Instruct the customer to log out of their account and log back in.; Choose the [Log Out/In] option as your action.  Nothing to enter in the form.)",
+      "  - Option 3 (Have the customer check the expiration date, maybe the credit card is too old; Enter 'troubleshoot' into the form and choose the [Enter Details] option as your action.)",
+      "  - Option 4 - Make the purchase for the customer.  To do this: (Start by asking for the customer\u2019s credit card number; Then ask for the expiration date; Enter a phrase of brand and item, such as 'Guess Jeans' or 'Calvin Klein Shirt')",
+      "[Cart Not Updating]",
+      "  - Option 1 (Instruct the customer to refresh the page and add the item again.; Choose the [Try Again] option as your action. Nothing to enter in the form.)",
+      "  - Option 2 (Instruct the customer to log out of their account and log back in.; Choose the [Log Out/In] option as your action.  Nothing to enter in the form.)",
+      "  - Option 3 (Have the customer check whether the selected item is Out-of-Stock.  This will be listed on the bottom left-hand side of the product page.; Enter 'troubleshoot' into the form and choose the [Enter Details] option as your action.)",
+      "  - Option 4 - Make the purchase for the customer.  To do this: (Start by asking for the customer\u2019s credit card number; Then ask for the expiration date; Enter a phrase of brand and item, such as 'Guess Jeans' or 'Calvin Klein Shirt')",
+      "[Search Not Working]",
+      "  - Option 1 (Instruct the customer to log out of their account and log back in.; Choose the [Log Out/In] option as your action.  Nothing to enter in the form.)",
+      "  - Option 2 (Tell the customer to try clearing out their cookies.; If the customer asks how: Cookies can be reset by checking the settings option in the browser and selecting 'More Details'; Choose the [Instructions] option as your action. Nothing to enter in the form.)",
+      "  - Option 3 (Let the customer know that you will write up a report and let the Website Team know about this, so they can do a better job.; Enter 'website team' into the input box and [Notify Internal Team])",
+      "  - Option 4 (Ask the customer what their original search item is.; Have the customer search for a different product, such as 'Prada Handbag'.  If that search works, then try to search the original item again.; Choose the [Try Again] option as your action.)",
+      "  - Option 5 - Make the purchase for the customer.  To do this: (Start by asking for the customer\u2019s credit card number; Then ask for the expiration date; Enter a phrase of brand and item, such as 'Guess Jeans' or 'Calvin Klein Shirt')",
+      "[Website Too Slow]",
+      "  - Option 1 (Let the customer know that you will write up a report about the slow speeds for the Website Team to fix.; Enter 'website team' into the input box and [Notify Internal Team])",
+      "  - Option 2 (Instruct the customer to log out of their account and log back in.; Choose the [Log Out/In] option as your action.  Nothing to enter in the form.)",
+      "  - Option 3 (Tell the customer to try visiting another website first.; If all websites are slow, then it is the customer\u2019s internet connection and not a problem with the AcmeCorp website.; Choose the [Try Again] option as your action. Nothing to enter in the form.)",
+      "  - Option 4 (Ask the customer to close all the other tabs on their browser. Also instruct them to close other programs that may be running.; Explain that many programs running in the background can cause a slowdown.; Choose the [Instructions] option as your action.)",
+      "  - Option 5 - Make the purchase for the customer.  To do this: (Start by asking for the customer\u2019s credit card number; Then ask for the expiration date; Enter a phrase of brand and item, such as 'Guess Jeans' or 'Calvin Klein Shirt')"
+    ],
+    "Manage Account": [
+      "[Status Service Added]",
+      "  - Ask the customer for their Full name or Account ID with [Pull up Account].  This loads information in the background with information related to this user.",
+      "  - Find out how the customer heard about this issue: (Options are one of the three ['email', 'spouse', 'news']; Enter this into the input box and [Record Reason])",
+      "  - To decide whether or not this is a valid error: (Tell the customer you will check your system about this problem.; You do not have to enter anything into the field.; Then [Ask the Oracle] if the customer made an error, which will return Yes or No)",
+      "  - If the customer is mistaken (Oracle says No), then explain: (If the customer was sent an email > Let them know this was a scam email, and if they check the sender, it isn\u2019t from the official AcmeCorp marketing team.; If the customer was told this from their spouse > let them know they must have misheard.  They have nothing to worry about and there are no extra charges.; If the customer saw this in the news > then let them know nicely that they must have misunderstood.   They have nothing to worry about and there are no extra charges.)",
+      "  - If the customer is correct (Oracle says Yes), then remove the extra service (Enter in 'remove service' and use the [Update Account] button.; Tell the customer that the extra service has been removed.)",
+      "  - If it is a legitimate error, then you can offer a refund to the customer (The amount should be for $40; Enter '40' in the field and then click on [Offer Refund])",
+      "[Status Service Removed]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Find out how the customer heard about this issue: (Options are one of the three ['email', 'spouse', 'news']; Enter this into the input box and [Record Reason])",
+      "  - To decide whether or not this is a valid error: (Tell the customer you will check your system about this problem.; Then [Ask the Oracle] if the customer is right, which will return Yes or No)",
+      "  - If the customer is mistaken (Oracle says No), then explain that there was a mistake: (If the customer was sent an email > Let them know this was a scam email, and if they check the sender, it isn\u2019t from the official AcmeCorp marketing team.; If the customer was told this from their spouse > let them know they must have misheard.  They have nothing to worry about and there are no extra charges.; If the customer saw this in the news > then let them know nicely that they must have misunderstood.   They have nothing to worry about and there are no extra charges.)",
+      "  - If the customer is correct (Oracle says Yes), then reinstate the lost service (Enter in 'add service' and click the [Update Account] button.; Explain to the customer that their service has been reinstated.)",
+      "  - Check that the service is now operational.  (i.e. 'Can you see the service properly activated on your account now?') (If they say yes, then wonderful! You are done.; If they say no, then tell them it may take a few minutes.  Then proceed to ask if they need anything else.)",
+      "[Status Shipping Question]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - To decide whether or not this is a valid error:",
+      "  - x",
+      "[Status Credit Missing]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Find out where the credits originated from.  Apologize for any inconvenience. (Options include ['subscription refund', 'previous purchase', 'promotional package']; Enter this into the input box and [Record Reason])",
+      "  - To decide whether or not this is a valid error: (Check if missing credit is accurate by 'Asking the Oracle' which will return Yes or No; Make sure to explain the result in natural language.)",
+      "  - If the credit is not missing (Oracle returns No) , then it is a problem in the Customer Interface (Please tell them to log out and log back in again, or something similar.; Assure the customer that their credit shows up on your side.; Feel free to end the conversation.)",
+      "  -  If the credit is missing (Oracle returns Yes): (Ask for how much credit to add to the customer\u2019s account.  If the customer does not know, the standard amount is $40.; Enter in the amount and click [Promo Code]; Send the generated promo code to the customer.)",
+      "[Manage Change Address]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - If they are trying to change address on the account, they must be able to provide their current address. (You only need the street address; For example, if they live at '7221 Florshim Drive, San Carlos, CA 91207', then you only need the part of '7221 Florshim Drive'; Enter this information into [Record Reason])",
+      "  - Verify the identity of the customer.  They must provide 3 out of 7 of the items below which you you enter into [Verify Identity] (Zip Code; Telephone Number; PIN Number)",
+      "  - Ask for the new, desired value. (Again, you only need the street address > For example '7226 Florishim Drive'; Enter this info and select [Update Account]; Tell them everything has been updated in the system)",
+      "[Manage Change Name]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - If they are trying to change the name on the account, they must be able to provide their current full name. (Get the current first and last name, such as 'George Constanza'; Enter this information and click [Record Reason])",
+      "  - Verify the identity of the customer.  They must provide 3 out of 7 of the items below which you you enter into [Verify Identity] (Zip Code; Telephone Number; PIN Number)",
+      "  - Ask for the new, desired value. (For example 'Jerry Seinfeld'; Enter this info and select [Update Account]; Tell them everything has been updated in the system)",
+      "[Manage Change Phone]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - To change the phone number, they must be able to provide their current number. (Format should be (XXX) XXX-XXXX; Enter this information and click [Record Reason])",
+      "  - Verify the identity of the customer.  They must provide 3 out of 7 of the items below which you you enter into [Verify Identity] (Zip Code; Telephone Number; PIN Number)",
+      "  - Ask for the new, desired value. Format should be (XXX) XXX-XXXX (Enter this info and select [Update Account]; Tell them everything has been updated in the system)",
+      "[Manage Payment Method]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - To change payment method, ask for their current payment method (Options include ['credit card', 'debit card', 'paypal']; Enter this information and click [Record Reason])",
+      "  - Verify the identity of the customer.  They must provide 3 out of 7 of the items below which you you enter into [Verify Identity] (Zip Code; Telephone Number; PIN Number)",
+      "  - Ask for the new, desired value. (Options include ['credit card', 'debit card', 'paypal']; Enter this info and select [Update Account]; Tell them everything has been updated in the system)"
+    ],
+    "Purchase Dispute": [
+      "[Bad Price Competitor]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID with [Pull up account]. (This loads information in the background related to this user.)",
+      "  - Find out why they are disputing a purchase price (Either 'competitor' or 'yesterday'; Enter this into the input box and [Record Reason])",
+      "  - Check if this is a valid order by gathering the following info, then [Verify Identity] (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Try to convince the customer that sometimes the prices change, and that is outside of your control. (For example, Our pricing algorithms will often dynamically change the price of an item.)",
+      "  - If they are still unhappy: (If the customer keeps pushing, offer them a discount using [Promo Code]; You do not need to enter any information.; Generate the code and share that with them)",
+      "[Bad Price Yesterday]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID with [Pull up account]. (This loads information in the background related to this user.)",
+      "  - Find out why they are disputing a purchase price (Either 'competitor' or 'yesterday'; Enter this into the input box and [Record Reason])",
+      "  - Check if this is a valid order by gathering the following info, then [Verify Identity] (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Try to convince the customer that sometimes the prices change, and that is outside of your control. (For example, Our pricing algorithms will often dynamically change the price of an item.)",
+      "  - If they are still unhappy: (If the customer keeps pushing, offer them a discount using [Promo Code]; You do not need to enter any information.; Generate the code and share that with them)",
+      "[Out-of-Stock General]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Let the customer know that you will write up a report and let the Purchasing Department know about this, so they can do a better job. (Enter 'purchasing department' into the input box and [Notify Internal Team])",
+      "  - Check if the customer is satisfied",
+      "  - If they are still unhappy: (If the customer keeps pushing, offer them a discount using [Promo Code]; You do not need to enter any information.; Generate the code and share that with them)",
+      "[Out-of-Stock One Item]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Find out which item they are unhappy about (Get the brand and type, such as 'Gap Sweater' or 'Uniqlo Socks'; Enter this into the input box and [Record Reason])",
+      "  - Let the customer know that you will write up a report and let the Purchasing Department know about this, so they can do a better job. (Enter 'purchasing department' into the input box and [Notify Internal Team])",
+      "  - If the customer is still not satisfied with the outcome, then offer to make the order for the customer (Let the customer know that you can back-order the item for them.  The item will then ship immediately when it becomes available.; To proceed, enter the brand and item, such as 'Express Jeans' or 'Banana Republic Shirt' into the input box; Confirm that you should use the same credit card that is on file.)",
+      "[Promo Code Invalid]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Typically promotions only last 7 days so check if the code was issued a long time ago.   That might be the reason it doesn\u2019t work. (If the promo code is more than 7 days, then the correct subflow is 'out of date', otherwise, the correct subflow is 'invalid'; Both flows follow the same instructions below.)",
+      "  - To decide whether or not this is a valid error: (Tell the customer you will check your system about this problem.; Then [Ask the Oracle] if the customer made an error, which will return Yes or No; Make sure to explain the result in natural language.)",
+      "  - If the customer is wrong (Oracle says No), then: (Ask the customer for their membership level.; Enter the member level (even if just a Guest) into [Membership Privileges] and submit.; Gold, Silver and Bronze all qualify. > The idea here is that even if their promo code is not valid for whatever reason, we will generate a new one for them because they are a valued member.)",
+      "  - Generate the promo code and share that with them (No need to enter anything into the form.; Click on [Promo Code]; If the customer asks, you can say it is for 20% off their next purchase.)",
+      "[Promo Code Out of Date]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Typically promotions only last 7 days so check if the code was issued a long time ago.   That might be the reason it doesn\u2019t work. (If the promo code is more than 7 days, then the correct subflow is 'out of date', otherwise, the correct subflow is 'invalid'; Both flows follow the same instructions below.)",
+      "  - To decide whether or not this is a valid error: (Tell the customer you will check your system about this problem.; Then [Ask the Oracle] if the customer made an error, which will return Yes or No; Make sure to explain the result in natural language.)",
+      "  - If the customer is wrong (Oracle says No), then: (Ask the customer for their membership level.; Enter the member level (even if just a Guest) into [Membership Privileges] and submit.; Gold, Silver and Bronze all qualify. > The idea here is that even if their promo code is not valid for whatever reason, we will generate a new one for them because they are a valued member.)",
+      "  - Generate the promo code and share that with them (No need to enter anything into the form.; Click on [Promo Code]; If the customer asks, you can say it is for 20% off their next purchase.)",
+      "[Mistimed Billing Already Returned]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - [Validate Purchase] to confirm that they have a valid order: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Decide whether or not this is a valid error by checking the time frame. (Ask how long the customer has waited for the refund to show up, in days; Enter this amount in [Record Reason]; If the customer is right (more than 7 days), skip to the Update Order step below)",
+      "  - If it has not been long enough (less than 7 days), then: (Ask the customer for their membership level and enter into [Membership Privileges]; This only works for Gold members. > The company risks paying back the customer twice by issuing two refunds, but we do this anyway because we really value our Gold Members.; For all other members > Unfortunately you cannot help them on this issue.  Do not update order.)",
+      "  - If this is a company error or a Gold member, then start processing the credit. (Type in 'give credit' into the field; Then click on [Update Order])",
+      "[Mistimed Billing Never Bought]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - [Validate Purchase] to confirm that they have a valid order: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - To decide whether or not this is a valid error: ([Ask the Oracle] if the customer made an error, which will return Yes or No; If the customer is right (Oracle says Yes), skip to the Update Order step below)",
+      "  - If the customer is wrong (Oracle says No), then: (Ask the customer for their membership level and enter into [Membership Privileges]; This only works for Gold members. > Even if the system says that this is a customer error, we value our Gold members really highly so we will just give them the credit anyway. > If it is already returned, then the company risks paying back the customer twice. > If the customer never bought the item, the company risks refunding the customer even though the customer was never charged in the first place.; For all other members > Unfortunately you cannot help them on this issue.  Do not update order.)",
+      "  - If this is a company error or a Gold member, then start processing the credit. (Type in 'give credit' into the field; Then click on [Update Order])"
+    ],
+    "Shipping Issue": [
+      "[Shipping Status]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID with [Pull up Account]. (This loads information in the background related to this user.)",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - To confirm that their purchase is valid with [Validate Purchase]: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Ask the Oracle (The customer will ask some sort of of yes/no question, which you can query the Oracle to get the answer; Explain the answer in natural language, and feel free to add any creative explanations or background.)",
+      "  - If the Oracle says Yes, then you can confirm that the customer\u2019s order looks as expected and the email was incorrect",
+      "  - If the Oracle says No, then the customer will not be happy. To resolve, enter how you will fix the problem (Options include: 'change date', 'change address', 'change item', or 'change price'; Enter into [Update Order])",
+      "[Manage Shipping]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by gathering the shipping status from the customer (Options include: 'Order Received',  'In Transit', 'Out for Delivery', or 'Delivered'; This should input using [Shipping Status])",
+      "  - To confirm that their purchase is valid with [Validate Purchase]: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Finally, perform the action for the customer by updating their order (Enter the type of change they want to make: > Options: 'Change address' or 'Change order'; Then click the [Update Order] button)",
+      "[Missing Item]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - To confirm that their purchase is valid with [Validate Purchase]: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - When shipping items, it can often take a couple days for the product to arrive (Ask how long they have been waiting and enter the number of days into [Record Reason])",
+      "  - If they have been waiting for less than a week (7 days or less), let the customer know that sometimes the package is mistakenly marked as delivered, but can still take a couple days to arrive",
+      "  - If the customer date has been waiting for a week or longer, let them know that you will ship a new order. (To do this, you will need their address; Enter the full address in one line and then click [Update Order])",
+      "  - Finally resend the package (Ask the customer for the brand and type of the product, such as 'Guess Jeans'; Enter this value into the form; Then click the [Make Purchase] button)",
+      "[Shipping Cost]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by confirming that their purchase is valid with [Validate Purchase]: (Username - occasionally, the customer may not remember their username.  In this case, use the Recover Username subflow in the Account Access flow; Email Address; Order ID)",
+      "  - Then, check to see status of their delivery (Ask the customer for the shipping status; Options include: 'Order Received',  'In Transit', 'Out for Delivery', or 'Delivered' ; Record the status using [Shipping Status])",
+      "  - If the status is 'Order Received' or  'In Transit', then offer to waive the fee on their shipment (Enter 'waive fee' in the input form; Click on [Update Order]; Wrap up and end the conversation)",
+      "  - Alternatively, if the status is 'Out for Delivery' or 'Delivered', then the best you can do is to give them part of the shipping fee back. (Standard shipping is $8.00, so enter '8' into the box; Then click on [Offer Refund])"
+    ],
+    "Subscription Inquiry": [
+      "[Status Active]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID with [Pull up account]. (This loads information in the background related to this user.)",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out the status by using [Subscription Status] action (You do not need to enter anything into the form. Just click the button.; This will return the general results, including whether or not the subscription is active or cancelled, as well as the due amount and the due date.; If the status does not make sense (ie. bill due today but amount due of $0), feel free to adjust the values (i.e make it $20 instead) so the story is reasonable.)",
+      "  - Provide a link to their account so they can look this up themselves in the future. (This is accomplished with the [Send Link] button.  You can put 'account login' as the text.  Explain that this is the link for signing into their account.; Make sure they know their own username.  Provide it to them if they don\u2019t.  You can make up their username as the first letter of first name + last name + 1 > For example: Howard Chen \u2192 hchen1)",
+      "  - Optional Step (Especially if the subscription is not active or past due, the customer will want to pay the bill.  In this case, get the amount and input into [Enter Detail].)",
+      "[Status Due Amount]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID with [Pull up account]. (This loads information in the background related to this user.)",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out the status by using [Subscription Status] action (You do not need to enter anything into the form. Just click the button.; This will return the general results, including whether or not the subscription is active or cancelled, as well as the due amount and the due date.; If the status does not make sense (ie. bill due today but amount due of $0), feel free to adjust the values (i.e make it $20 instead) so the story is reasonable.)",
+      "  - Provide a link to their account so they can look this up themselves in the future. (This is accomplished with the [Send Link] button.  You can put 'account login' as the text.  Explain that this is the link for signing into their account.; Make sure they know their own username.  Provide it to them if they don\u2019t.  You can make up their username as the first letter of first name + last name + 1 > For example: Howard Chen \u2192 hchen1)",
+      "  - Optional Step (Especially if the subscription is not active or past due, the customer will want to pay the bill.  In this case, get the amount and input into [Enter Detail].)",
+      "[Status Due Date]",
+      "  - All chats in this flow start by asking the customer for their full name or Account ID with [Pull up account]. (This loads information in the background related to this user.)",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Find out the status by using [Subscription Status] action (You do not need to enter anything into the form. Just click the button.; This will return the general results, including whether or not the subscription is active or cancelled, as well as the due amount and the due date.; If the status does not make sense (ie. bill due today but amount due of $0), feel free to adjust the values (i.e make it $20 instead) so the story is reasonable.)",
+      "  - Provide a link to their account so they can look this up themselves in the future. (This is accomplished with the [Send Link] button.  You can put 'account login' as the text.  Explain that this is the link for signing into their account.; Make sure they know their own username.  Provide it to them if they don\u2019t.  You can make up their username as the first letter of first name + last name + 1 > For example: Howard Chen \u2192 hchen1)",
+      "  - Optional Step (Especially if the subscription is not active or past due, the customer will want to pay the bill.  In this case, get the amount and input into [Enter Detail].)",
+      "[Manage Pay Bill]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - The standard subscription is $99 a year.  Find out how much of this the customer wants to pay. (If the customer does not know the amount, you can click go to KB Query > [Subscription Status] to generate a random amount due.  Explain to the customer that this is what they need to pay.; If this value is $0, make it $99 instead so it makes sense.; Once you have a number enter that value into [Enter Detail])",
+      "  - Ask if the customer has a credit card number.  If they do not, tell them you will use the credit card on the account",
+      "  - Finalize their subscription payment (Enter the value of 'renew subscription'; Click the [Update Account] button)",
+      "[Manage Extension]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Whether or not they get an extension depends on the membership level (Enter the member level (Gold, Silver, Bronze or Guest) into [Membership Privileges]; Gold members can always get an extension; Silver member get an extension if they are only 1 day late)",
+      "  - (Option A) If they get an extension (Enter 'extend subscription' into [Update Account]; Then ask if they need anything else and wrap up the conversation)",
+      "  - (Option B) If they do not get an extension and escalate to the manager (Ask for their phone number so they have a number you can call them on; Put the phone number into [Enter Details]; Then let them know, the manager will call them back later)",
+      "[Manage Dispute Bill]",
+      "  - Get Full Name or Account ID for [Pull up Account]",
+      "  - Start by looking up the order using the [Verify Identity] fields. (Full name - may have gotten this earlier; Account ID - may have gotten this earlier; Order ID)",
+      "  - Whether or not they get an refund depends on the membership level (Enter the member level (Gold, Silver, Bronze or Guest) into [Membership Privileges]; Gold members can always get what they want ; Silver member get a refund if the amount wrong is less than $10)",
+      "  - If Bronze or Guest members, you need to [Ask the Oracle] (If the Oracle says Yes, then they still get the refund; If the Oracle says No, then the customer does not get the refund)",
+      "  - Find out how much the customer is asking for (If they are supposed to be charged $50 and the bill was $60, then the refund amount should be $10; Perhaps they are just complaining because the bill was high, but they haven\u2019t actually paid it yet.  In this case, just apologize for the misunderstanding.; However, perhaps they already paid the bill.  In this case, enter the correct amount (for example '10') and select [Offer Refund])"
+    ],
+    "Single-Item Query": [
+      "[Boots FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which article of clothing the customer is asking about: (Possible options are Jeans, Shirt, Boots and Jacket; Click the boots toggle switch; This will record an action, so try to get this decision correct)",
+      "  - Read through the list of 8 options (Select the correct answer for the customer\u2019s question with [Select Answer]; Remember the question your selected for the survey later)",
+      "  - The system created response does not include all the information, so make sure to explain the details in natural language. (Do not copy/paste.)",
+      "[Shirt FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which article of clothing the customer is asking about: (Possible options are Jeans, Shirt, Boots and Jacket; Click the shirt toggle switch; This will record an action, so try to get this decision correct)",
+      "  - Read through the list of 8 options (Select the correct answer for the customer\u2019s question with [Select Answer]; Remember the question your selected for the survey later)",
+      "  - The system created response does not include all the information, so make sure to explain the details in natural language. (Do not copy/paste.)",
+      "[Jeans FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which article of clothing the customer is asking about: (Possible options are Jeans, Shirt, Boots and Jacket; Click the jeans toggle switch; This will record an action, so try to get this decision correct)",
+      "  - Read through the list of 8 options (Select the correct answer for the customer\u2019s question with [Select Answer]; Remember the question your selected for the survey later)",
+      "  - The system created response does not include all the information, so make sure to explain the details in natural language. (Do not copy/paste.)",
+      "[Jacket FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which article of clothing the customer is asking about: (Possible options are Jeans, Shirt, Boots and Jacket; Click the jacket toggle switch; This will record an action, so try to get this decision correct)",
+      "  - Read through the list of 8 options (Select the correct answer for the customer\u2019s question with [Select Answer]; Remember the question your selected for the survey later)",
+      "  - The system created response does not include all the information, so make sure to explain the details in natural language. (Do not copy/paste.)"
+    ],
+    "Storewide Query": [
+      "[Pricing FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which kind of question the customer is asking about: (Possible options are Pricing, Timing, Membership and Policies; Click the pricing toggle switch; This will record an action, so try to get this decision correct.)",
+      "  - Read through the list of 4 options (Click [Select Answer] for the correct answer to the customer\u2019s question; Remember the category for the survey later)",
+      "  - The automated system response does not include all the information, so make sure to explain the details in natural language. (You should not copy/paste)",
+      "[Membership FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which kind of question the customer is asking about: (Possible options are Pricing, Timing, Membership and Policies; Click the membership toggle switch; This will record an action, so try to get this decision correct.)",
+      "  - Read through the list of 4 options (Click [Select Answer] for the correct answer to the customer\u2019s question; Remember the category for the survey later)",
+      "  - The automated system response does not include all the information, so make sure to explain the details in natural language. (You should not copy/paste)",
+      "[Timing FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which kind of question the customer is asking about: (Possible options are Pricing, Timing, Membership and Policies; Click the timing toggle switch; This will record an action, so try to get this decision correct.)",
+      "  - Read through the list of 4 options (Click [Select Answer] for the correct answer to the customer\u2019s question; Remember the category for the survey later)",
+      "  - The automated system response does not include all the information, so make sure to explain the details in natural language. (You should not copy/paste)",
+      "[Policy FAQ]",
+      "  - When you realize that the customer is asking something that can be found in the FAQ, click the [Search FAQ] button (This will swap out for a different view that has FAQ content; If you made an error, just click [Hide FAQ] to switch back)",
+      "  - Decide which kind of question the customer is asking about: (Possible options are Pricing, Timing, Membership and Policies; Click the policy toggle switch; This will record an action, so try to get this decision correct.)",
+      "  - Read through the list of 4 options (Click [Select Answer] for the correct answer to the customer\u2019s question; Remember the category for the survey later)",
+      "  - The automated system response does not include all the information, so make sure to explain the details in natural language. (You should not copy/paste)"
+    ]
+  }
+}

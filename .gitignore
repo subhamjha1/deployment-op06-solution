@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Never commit secrets
+.env
+*.key
+
+# Scratch / superseded dev artifacts (kept out on purpose -- see README for what IS committed)
+models_aug/
+*.log

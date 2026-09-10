@@ -1,0 +1,19 @@
+{
+  "n_requests": 2309,
+  "errors": 0,
+  "concurrency": 1,
+  "total_wall_time_s": 52.406,
+  "throughput_rps": 44.06,
+  "latency_ms": {
+    "p50": 21.94,
+    "p95": 26.04,
+    "p99": 29.33,
+    "max": 91.88,
+    "min": 1.63
+  },
+  "cost": {
+    "llm_calls": 0,
+    "cost_per_message_usd": 0.0,
+    "note": "Cheap-path-only system (no LLM fallback wired in). Marginal cost is CPU time only; $0 in API spend."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "n": 2300,
+  "overall_accuracy": 0.7496,
+  "top70_accuracy": 0.8484,
+  "top70_error_ratio": 0.6052,
+  "bar": 0.85,
+  "pass": true,
+  "reliability_deciles": [
+    {
+      "decile": "0-10%",
+      "n": 230,
+      "accuracy": 0.9174,
+      "confidence_range": "0.918-0.982"
+    },
+    {
+      "decile": "10-20%",
+      "n": 230,
+      "accuracy": 0.8348,
+      "confidence_range": "0.878-0.918"
+    },
+    {
+      "decile": "20-30%",
+      "n": 230,
+      "accuracy": 0.8652,
+      "confidence_range": "0.841-0.877"
+    },
+    {
+      "decile": "30-40%",
+      "n": 230,
+      "accuracy": 0.8913,
+      "confidence_range": "0.799-0.841"
+    },
+    {
+      "decile": "40-50%",
+      "n": 230,
+      "accuracy": 0.8565,
+      "confidence_range": "0.747-0.799"
+    },
+    {
+      "decile": "50-60%",
+      "n": 230,
+      "accuracy": 0.787,
+      "confidence_range": "0.689-0.747"
+    },
+    {
+      "decile": "60-70%",
+      "n": 230,
+      "accuracy": 0.787,
+      "confidence_range": "0.624-0.689"
+    },
+    {
+      "decile": "70-80%",
+      "n": 230,
+      "accuracy": 0.6696,
+      "confidence_range": "0.552-0.623"
+    },
+    {
+      "decile": "80-90%",
+      "n": 230,
+      "accuracy": 0.5261,
+      "confidence_range": "0.468-0.552"
+    },
+    {
+      "decile": "90-100%",
+      "n": 230,
+      "accuracy": 0.3609,
+      "confidence_range": "0.209-0.467"
+    }
+  ],
+  "roughly_monotonic": false
+}

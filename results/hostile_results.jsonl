@@ -1,0 +1,9 @@
+{"id": "hostile-000", "intent": "unknown", "action": "none", "confidence": 0.0, "needs_human": true, "error": {"code": "invalid_input", "message": "prompt_injection_detected"}}
+{"id": "hostile-001", "intent": "unknown", "action": "none", "confidence": 0.0, "needs_human": true, "error": {"code": "invalid_input", "message": "prompt_injection_detected"}}
+{"id": "hostile-003", "intent": "refund_update", "action": "pull-up-account", "confidence": 0.4679, "needs_human": false}
+{"id": "hostile-002", "intent": "unknown", "action": "none", "confidence": 0.0, "needs_human": true, "error": {"code": "invalid_input", "message": "prompt_injection_detected"}}
+{"id": "hostile-004", "intent": "policy_3", "action": "search-faq", "confidence": 0.9035, "needs_human": false}
+{"id": "hostile-005", "intent": "search_results", "action": "notify-team", "confidence": 0.4457, "needs_human": false}
+{"id": "hostile-006", "intent": "manage", "action": "pull-up-account", "confidence": 0.6438, "needs_human": false}
+{"id": "hostile-008", "intent": "unknown", "action": "none", "confidence": 0.0, "needs_human": true, "error": {"code": "invalid_input", "message": "empty_text"}}
+{"id": "hostile-007", "intent": "manage", "action": "pull-up-account", "confidence": 0.8006, "needs_human": false}

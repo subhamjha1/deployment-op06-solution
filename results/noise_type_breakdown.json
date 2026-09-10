@@ -1,0 +1,76 @@
+{
+  "noise_types": {
+    "typo": {
+      "n": 50,
+      "before_augmentation": {
+        "intent_accuracy": 0.66,
+        "action_accuracy": 0.7
+      },
+      "after_augmentation": {
+        "intent_accuracy": 0.74,
+        "action_accuracy": 0.66
+      },
+      "action_accuracy_delta": -0.04
+    },
+    "code_mixed": {
+      "n": 50,
+      "before_augmentation": {
+        "intent_accuracy": 0.64,
+        "action_accuracy": 0.74
+      },
+      "after_augmentation": {
+        "intent_accuracy": 0.66,
+        "action_accuracy": 0.7
+      },
+      "action_accuracy_delta": -0.04
+    },
+    "two_intents": {
+      "n": 50,
+      "before_augmentation": {
+        "intent_accuracy": 0.54,
+        "action_accuracy": 0.76
+      },
+      "after_augmentation": {
+        "intent_accuracy": 0.5,
+        "action_accuracy": 0.72
+      },
+      "action_accuracy_delta": -0.04
+    },
+    "empty": {
+      "n": 50,
+      "before_augmentation": {
+        "intent_accuracy": 0.56,
+        "action_accuracy": 0.62
+      },
+      "after_augmentation": {
+        "intent_accuracy": 0.54,
+        "action_accuracy": 0.7
+      },
+      "action_accuracy_delta": 0.08
+    },
+    "very_long": {
+      "n": 50,
+      "before_augmentation": {
+        "intent_accuracy": 0.1,
+        "action_accuracy": 0.34
+      },
+      "after_augmentation": {
+        "intent_accuracy": 0.46,
+        "action_accuracy": 0.52
+      },
+      "action_accuracy_delta": 0.18
+    },
+    "screenshot": {
+      "n": 50,
+      "before_augmentation": {
+        "intent_accuracy": 0.4,
+        "action_accuracy": 0.64
+      },
+      "after_augmentation": {
+        "intent_accuracy": 0.38,
+        "action_accuracy": 0.68
+      },
+      "action_accuracy_delta": 0.04
+    }
+  }
+}
